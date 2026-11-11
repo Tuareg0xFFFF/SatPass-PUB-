@@ -1,6 +1,6 @@
 # Privacy Policy for SatPass Planner
 
-Last updated: November 10, 2026
+Last updated: November 11, 2026
 
 SatPass Planner (shown as SatPass on your device) predicts when satellites pass over you, for radio amateurs and satellite watchers, on iPhone, iPad and Mac. This policy covers the app on all three.
 
@@ -29,6 +29,12 @@ SatPass Planner (shown as SatPass on your device) predicts when satellites pass 
 - SatPass uses your location to work out which satellites pass over you, and when. You can enter a Maidenhead grid square or coordinates instead of allowing location access.
 - Approximate location is enough, so SatPass works with Precise Location turned off.
 - Your location is used on your device, and sent only to Apple for the time-zone lookup above.
+
+## Camera and motion sensors
+
+- Point & Track, on iPhone and iPad, shows the live camera picture under the satellite path. The picture is used on screen only: SatPass does not record, store or send it.
+- The system asks for camera access the first time. Without it, Point & Track still works over a black background.
+- Point & Track reads the motion sensors and compass to know where the device points. That happens on your device, and nothing is sent.
 
 ## Notifications
 

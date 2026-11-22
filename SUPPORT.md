@@ -1,66 +1,66 @@
 # SatPass Planner Support
 
-SatPass Planner (shown as SatPass on your device) predicts satellite passes on iPhone, iPad and Mac, with Doppler tuning and radio control for radio amateurs. Here is how to get help, report a problem, or ask for a feature.
+SatPass Planner predicts satellite passes on iPhone, iPad and Mac. It also gives Doppler tuning and radio control for radio amateurs. On your device, its name is SatPass. This page tells you how to find help, report a problem or ask for a feature.
 
-Last updated: November 10, 2026
+Last updated: November 22, 2026
 
-## Getting help
+## Help
 
 Open an issue on GitHub:
 
 **https://github.com/Tuareg0xFFFF/SatPass-PUB-/issues**
 
-## Before you open an issue
+## Checks to do before you open an issue
 
-1. **Passes look wrong or are missing.**
-   - Check your location in Settings, including its time zone.
-   - Check the minimum elevation in Settings: passes peaking lower are hidden.
-   - Look at **Orbit data** at the top of the pass list. If it says Stale or Expired, tap Refresh while online.
-2. **Alerts don't arrive.**
-   - Check that notifications are on for SatPass in the system Settings.
-   - Check that alerts are on for this device in Settings › Alerts. Each device has its own switch, so your iPhone, iPad and Mac don't all alert for the same pass.
-3. **Radio or rotator control doesn't connect.**
-   - Check that rigctld or rotctld is running and reachable from this device. Try the address and port from another computer.
-   - On iPhone and iPad, check that Local Network access is on for SatPass in the system Settings › Privacy & Security.
-4. Make sure you have the latest SatPass from the App Store.
+1. **The passes are not correct, or some passes are not shown.**
+   - Check your location in Settings. Also check its time zone.
+   - Check the minimum elevation in Settings. SatPass does not show passes with a lower maximum elevation.
+   - Look at **Orbit data** at the top of the pass list. If it shows Stale or Expired, connect to the internet and select Refresh.
+2. **The alerts do not arrive.**
+   - Make sure that notifications for SatPass are on in the system Settings.
+   - Make sure that alerts are on for this device in Settings › Alerts. Each device has its own switch. Thus your iPhone, iPad and Mac do not all give an alert for the same pass.
+3. **Radio or rotator control does not connect.**
+   - Make sure that rigctld or rotctld runs and that this device can connect to it. Try the address and the port from a different computer.
+   - On iPhone and iPad, make sure that Local Network access for SatPass is on in the system Settings › Privacy & Security.
+4. Make sure that you have the latest version of SatPass from the App Store.
 
-## Reporting a bug
+## Report a problem
 
-Please include:
+Include this data:
 
-- **SatPass version:** Settings › Acknowledgements, at the bottom.
-- **Device and system:** the iOS, iPadOS or macOS version and the device model.
-- **The satellite and the pass,** if it's about a prediction: the satellite's name or NORAD number, and the date and time.
-- **For radio control:** the radio and rotator models, and your Hamlib version (`rigctld --version`).
-- **Steps to reproduce,** what you expected, and what happened.
-- **Screenshots or a screen recording,** if they help.
+- **The SatPass version:** Settings › Acknowledgements, at the bottom.
+- **The device and the system:** the device model, and the iOS, iPadOS or macOS version.
+- **The satellite and the pass,** for a problem with a prediction: the name or NORAD number of the satellite, and the date and time.
+- **For radio control:** the radio model, the rotator model and the Hamlib version (`rigctld --version`).
+- **The steps that cause the problem,** the result that you expected and the result that you saw.
+- **Screenshots or a screen video,** if they help.
 
-Do **not** post your exact home location or your network addresses in a public issue. A nearby town or a 4-character grid square is enough.
+Do **not** put your exact home location or your network addresses in a public issue. A nearby town or a 4-character grid square is sufficient.
 
 ## Frequently asked questions
 
-**How accurate are the predictions?**
-SatPass uses the standard SGP4 orbit model with orbit data that is usually less than a day old. Each pass shows a ± timing estimate that grows as the data ages. Times are typically good to a few seconds when the data is fresh.
+**The accuracy of the predictions.**
+SatPass uses the standard SGP4 orbit model. The orbit data is usually less than one day old. Each pass shows a ± time error, and this error increases as the data becomes older. With new data, the times are usually correct to a few seconds.
 
-**Does it work offline?**
-Yes. SatPass predicts on your device from the last orbit data it downloaded, and shows how old that data is.
+**Offline use.**
+SatPass works offline. It predicts on your device from the last orbit data that it downloaded. It also shows the age of that data.
 
-**Which radios can it control?**
-Any radio or rotator that Hamlib supports, through rigctld and rotctld running on a computer on your network. Radio control is part of SatPass Pro.
+**The radios that SatPass can control.**
+SatPass can control all radios and rotators that Hamlib supports. It connects to rigctld and rotctld on a computer on your network. Radio control is part of SatPass Pro.
 
-**What does Pro cost?**
-US $14.99 a year, or $49.99 once. Both cover iPhone, iPad and Mac and can be shared with Family Sharing.
+**The price of Pro.**
+SatPass Pro costs US $14.99 each year, or $49.99 one time. Both options are for iPhone, iPad and Mac. Both options work with Family Sharing.
 
-**Where does the data come from?**
-Orbit data from CelesTrak, derived from USSPACECOM data. Radio transmitter data from SatNOGS DB (CC BY-SA 4.0). See Settings › Acknowledgements.
+**The sources of the data.**
+The orbit data comes from CelesTrak, which uses data from USSPACECOM. The radio transmitter data comes from SatNOGS DB (CC BY-SA 4.0). Refer to Settings › Acknowledgements.
 
-**Does SatPass send my data anywhere?**
-No personal data goes to the developer. See [PRIVACY.md](PRIVACY.md).
+**Your data.**
+SatPass sends no personal data to the developer. Refer to the [privacy policy](PRIVACY.md).
 
 ## Feature requests
 
-Open an issue whose title starts with "Feature request:", and describe what you are trying to do.
+Open an issue. Start its title with "Feature request:". Then tell what you want to do.
 
 ## Privacy
 
-See [PRIVACY.md](PRIVACY.md) for the privacy policy.
+Refer to [PRIVACY.md](PRIVACY.md) for the privacy policy.
